@@ -1,6 +1,7 @@
+
 var a;	
 	for (var a = 1; a <= 100; a++ ) {
-		if (a % 15 === 0) {
+		if (a % 5 === 0 && a % 3 === 0) {
 			document.write("Fizzbuzz<br>");
 			continue;
 		};
@@ -10,7 +11,7 @@ var a;
 		};
 		if (a % 3 === 0) {
 			document.write("Fizz<br>");
+			continue;
 		};
-
 		document.write(a + "<br>");
 	}
