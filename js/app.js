@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	function runFizzbuzz() {
 		$('input').keydown(function(enter){
-			if (enter.keycode == 13) {
+			if (enter.keyCode == 13) {
 				enter.preventDefault();
 				$('p').remove();
 				var userInput = $(this).val();
@@ -33,6 +33,7 @@ $(document).ready(function(){
 			}
 		})
 	}
+	
 	runFizzbuzz();
-})
+});
 
